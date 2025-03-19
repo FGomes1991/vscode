@@ -1,5 +1,10 @@
-let numA = 30
-let numB = 20
+function sumaArray(arr) {
+    let suma = 0;
+    for (let i = 0; i <= arr.length; i++) { // <--- ¿Hay un problema aquí? 🤔
+        suma += arr[i];
+    }
+    return suma;
+}
 
-let res = numA + numB
-console.log(res)
+const numeros = [1, 2, 3, 4, 5];
+console.log(`La suma del array es: ${sumaArray(numeros)}`);
